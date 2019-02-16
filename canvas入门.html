@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #canvas {
+            background: #000000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+
+<script>
+    var canvas = document.getElementById("canvas")
+    var context = canvas.getContext("2d")
+    var cx = canvas.width = 400
+    var cy = canvas.height = 400
+
+
+    //绘制圆形
+//    context.beginPath()     // 起始一条路径，或重置当前路径
+//    context.arc(100, 100, 50, 0, Math.PI * 1.5, false)    // 创建弧/曲线
+//    //context.closePath()     // 创建从当前点回到起始点的路径
+//    //context.fillStyle = `rgb(255, 255, 255)`        // 设置或返回用于填充绘画的颜色、渐变或模式
+//    //context.fill();         // 填充当前绘图（路径）
+//    context.strokeStyle="white";
+//    context.stroke();
+
+
+    //绘制直线
+//    context.beginPath()
+//    context.moveTo(50, 50)      //起点
+//    context.lineTo(100,100)     //终点
+//    context.lineWidth = 10    //线宽
+//    context.lineCap = 'round'//线头样式 圆头
+//    context.strokeStyle = '#fff'
+//    context.stroke()
+
+    //绘制矩形
+//    context.beginPath()
+//    context.fillStyle = '#fff'
+//    context.fillRect(10, 10, 100, 100)
+//    context.strokeStyle = '#fff'
+//    context.strokeRect(130, 10, 100, 100)
+
+    //设置阴影
+//    context.beginPath()
+//    context.arc(100, 100, 50, 0, Math.PI * 2, false)
+//    context.fillStyle = '#fff'
+//    context.shadowBlur = 20           //设置或返回用于阴影的模糊级别
+//    context.shadowColor = '#fff'     //	设置或返回用于阴影的颜色
+//    context.shadowOffsetX = 10        //设置或返回阴影距形状的水平距离
+//    context.shadowOffsetY = 10
+//    context.fill()
+
+    //设置渐变
+//    var grd = context.createLinearGradient(100, 100, 100, 200)
+//    grd.addColorStop(0,'rgb(255, 0, 0)');
+//    grd.addColorStop(0.2,'rgb(255, 165, 0)');
+//    grd.addColorStop(0.3,'rgb(255, 255, 0)');
+//    grd.addColorStop(0.5,'rgb(0, 255, 0)');
+//    grd.addColorStop(0.7,'rgb(0, 127, 255)');
+//    grd.addColorStop(0.9,'rgb(0, 0, 255)');
+//    grd.addColorStop(1,'rgb(139, 0, 255)');
+//
+//    context.fillStyle = grd
+//    context.fillRect(100, 100, 200, 200)
+
+
+    //图形转换
+//    context.strokeStyle = 'white'
+//    context.strokeRect(5,5,50,25)
+//    context.scale(2,2)
+//    context.strokeRect(5,5,50,25)
+//    context.scale(2,2)
+//    context.strokeRect(5,5,50,25)
+
+    //图形旋转
+    context.fillStyle = 'white'
+    context.rotate(20 * Math.PI / 180)
+    context.fillRect(70, 30,200, 100)
+</script>
+</body>
+</html>
